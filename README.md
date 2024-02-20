@@ -20,6 +20,7 @@ Installation and Usage:
 - Link the library to your executable during compilation using the appropriate flags for your compiler (e.g., -lft for GCC).
 
 Contributions:
+
 We welcome contributions! Here's how:
 - Fork the repository: Create your own copy.
 - Modify and test: Make your changes and ensure they work as expected.
