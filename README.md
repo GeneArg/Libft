@@ -1,7 +1,9 @@
 Description:
+
 This repository contains the implementation of various functions for the 42 School libft project, adhering to the specified guidelines and coding standards. These functions can be used in future projects within the curriculum to enhance development efficiency and code reusability.
 
 Key Features:
+
 Custom Implementations: Provides tailored versions of functions commonly found in the standard C library, fostering a deeper understanding of their inner workings.
 Norminette Compliance: Code strictly adheres to the Norminette style guide, ensuring consistency and readability.
 Clear Organization: Functions are logically grouped within subdirectories, promoting maintainability and easy navigation.
