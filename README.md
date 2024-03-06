@@ -1,27 +1,27 @@
-Description:
+# libft
 
-This repository contains the implementation of various functions for the 42 School libft project, adhering to the specified guidelines and coding standards. These functions can be used in future projects within the curriculum to enhance development efficiency and code reusability.
+## Overview
 
-Key Features:
+The libft project is an introductory project at 42 school, which aims to recreate some standard C library functions as well as additional utility functions. It serves as a fundamental library that you can use in your future projects at 42.
 
-Custom Implementations: Provides tailored versions of functions commonly found in the standard C library, fostering a deeper understanding of their inner workings.
-Norminette Compliance: Code strictly adheres to the Norminette style guide, ensuring consistency and readability.
-Clear Organization: Functions are logically grouped within subdirectories, promoting maintainability and easy navigation.
-Comprehensive Testing: Rigorous unit tests ensure the correctness and reliability of each function.
-Detailed Documentation: Function headers and explanations provide clear usage instructions and purpose guidance.
+## Project Structure
 
-Installation and Usage:
-1. Clone the repository: git clone https://github.com/GeneArg/Libft.git
-2. Build the library:
-- Follow the instructions in the Makefile file. This typically involves running make or make all.
-- The compiled library file (libft.a) will be generated in the root directory.
-3. Include the library in your project:
-- Add the library directory to your project's include path.
-- Link the library to your executable during compilation using the appropriate flags for your compiler (e.g., -lft for GCC).
+The project consists of the following main components:
 
-Contributions:
+1. **libft.a**: The compiled library containing the implemented functions.
 
-We welcome contributions! Here's how:
-- Fork the repository: Create your own copy.
-- Modify and test: Make your changes and ensure they work as expected.
-- Submit pull request: Propose your changes with a clear description and justification, adhering to coding standards.
+2. **Includes**: Header files (.h) for the functions provided in the library.
+
+3. **Sources**: The source files (.c) containing the implementation of the library functions.
+
+4. **Bonus**: Additional functions that extend the functionality of the library beyond the required ones.
+
+## Implemented Functions
+
+The library includes implementations of standard C library functions as well as additional utility functions. Some of the key functions implemented include:
+
+- Memory manipulation functions (`memset`, `bzero`, `memcpy`, `memccpy`, `memmove`, `memchr`, `memcmp`, `calloc`).
+- String manipulation functions (`strlen`, `strcpy`, `strncpy`, `strcat`, `strncat`, `strlcat`, `strchr`, `strrchr`, `strstr`, `strnstr`, `strcmp`, `strncmp`, `atoi`, `itoa`).
+- Character classification functions (`isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint`, `toupper`, `tolower`).
+- Memory allocation functions (`malloc`, `free`, `calloc`).
+- Linked list manipulation functions (bonus).
