@@ -6,7 +6,7 @@
 /*   By: eagranat <eagranat@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 11:06:07 by eagranat          #+#    #+#             */
-/*   Updated: 2024/02/19 13:13:14 by eagranat         ###   ########.fr       */
+/*   Updated: 2024/02/19 22:20:29 by eagranat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	j = 0;
-	if (needle == 0 || needle[0] == '\0')
+	if (len == 0 && haystack == NULL)
+		return (NULL);
+	if (needle[0] == '\0')
 		return ((char *)haystack);
 	while (haystack[i] != '\0' && i < len)
 	{

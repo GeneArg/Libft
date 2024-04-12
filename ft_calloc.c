@@ -6,7 +6,7 @@
 /*   By: eagranat <eagranat@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 11:09:35 by eagranat          #+#    #+#             */
-/*   Updated: 2024/02/19 14:05:05 by eagranat         ###   ########.fr       */
+/*   Updated: 2024/02/20 11:17:13 by eagranat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,21 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	b;
-	void	*p;
+	size_t			total_size;
+	size_t			i;
+	void			*ptr;
+	unsigned char	*byte_ptr;
 
-	if (count == 0 || size == 0)
-	{
-		count = 1;
-		size = 1;
-	}
-	b = count * size;
-	p = malloc(b);
-	if (p == NULL)
+	i = 0;
+	total_size = count * size;
+	ptr = malloc(total_size);
+	if (ptr == NULL)
 		return (NULL);
-	else
-		ft_bzero(p, b);
-	return (p);
+	byte_ptr = (unsigned char *)ptr;
+	while (i < total_size)
+	{
+		byte_ptr[i] = 0;
+		i++;
+	}
+	return (ptr);
 }
